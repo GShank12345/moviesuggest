@@ -1,0 +1,352 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "movie suggest",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "exit",
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help suggesting a movie",
+                        "help with  suggesting a movie",
+                        "help with movie suggest",
+                        "help movie suggest",
+                        "movie suggest help",
+                        "help with suggesting a movie",
+                        "about",
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "suggestmovie",
+                    "slots": [
+                        {
+                            "name": "aicharacters",
+                            "type": "aicharacters"
+                        },
+                        {
+                            "name": "aigenre",
+                            "type": "aigenre"
+                        },
+                        {
+                            "name": "airating",
+                            "type": "airating"
+                        }
+                    ],
+                    "samples": [
+                        "suggest a {aigenre} genre movie with {airating} rating",
+                        "suggest a movie  in {aigenre} genre with {airating} rating",
+                        "suggest another movie  in {aigenre} genre with {airating} rating",
+                        "suggest another movie with {aicharacters} and {airating} rating",
+                        "suggest another movie  with {aicharacters} in {aigenre} genre ",
+                        "suggest another movie  with {aicharacters} in {aigenre} genre and {airating} rating",
+                        "suggest another {aicharacters} movie  in {aigenre} genre with {airating} rating",
+                        "suggest another {aicharacters} movie  in {aigenre} genre and {airating} rating",
+                        "suggest another movie with {aicharacters} in {aigenre} genre and {airating} rating",
+                        "suggest a movie in {aicharacters} in {aigenre} genre",
+                        "say a {aicharacters} movie in  {aigenre} genre",
+                        "suggest a {aicharacters} movie in {aigenre} genre",
+                        "tell me a {aicharacters} movie in {aigenre}",
+                        "tell me a {airating} rating movie",
+                        "tell me a {aicharacters} movie with a {airating} rating",
+                        "say a {aicharacters} movie with a {airating} rating",
+                        "suggest a {aicharacters} movie with a {airating} rating",
+                        "suggest a movie with a {airating} rating",
+                        "tell a movie with {airating} rating",
+                        "suggest a movie with {airating} rating",
+                        "tell a {airating} rating movie",
+                        "suggest a {airating} rating movie",
+                        "tell a movie in {aigenre} category",
+                        "suggest a movie in {aigenre} category",
+                        "tell a movie in {aigenre} genre",
+                        "suggest a movie in {aigenre} genre",
+                        "tell a moview with {aicharacters}",
+                        "suggest a movie with {aicharacters} ",
+                        "tell a {aicharacters} movie",
+                        "suggest a {aicharacters} movie",
+                        "Say a {aicharacters} movie in {aigenre} category with {airating} rating",
+                        "Say a movie with {aicharacters} in {aigenre} with {airating} rating",
+                        "one movie with {aicharacters} in {aigenre} with {airating} rating",
+                        "one movie with {aicharacters} in {aigenre} genre with {airating} ",
+                        "{aicharacters} movie in {aigenre} category with {airating} rating",
+                        "tell a movie with {aicharacters} in {aigenre} with {airating}",
+                        "suggest a movie with {aicharacters} in {aigenre} with a {airating}",
+                        "suggest one {aicharacters} movie in {aigenre} with {airating} rating",
+                        "suggest a {aicharacters} movie in {aigenre} with {airating}",
+                        "a movie with a {airating} rating",
+                        "a movie with {airating}",
+                        "a movie with {aicharacters}",
+                        "a movie with a {aicharacters}",
+                        "suggest a movie with a {aicharacters} and  an {airating} rating",
+                        "suggest a movie with a {aicharacters} and {airating} rating",
+                        "tell me a movie with {aicharacters} and a {airating}  rating",
+                        "movie with {airating}",
+                        "say a movie with {airating}",
+                        "say a movie with {aicharacters}",
+                        "movie with a {airating}",
+                        "movie with {aicharacters}",
+                        "tell me a movie with {aicharacters} and {airating}  rating",
+                        "say a movie with {aicharacters} and {airating}",
+                        "movie with {aicharacters} and {airating}",
+                        "movie having {aicharacters} and {airating} rating",
+                        "movie with {aicharacters} and {airating} rating",
+                        "suggest a {aicharacters} movie with a rating {airating}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "airating",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "R",
+                                "synonyms": [
+                                    "r"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NC - 17",
+                                "synonyms": [
+                                    "nc - 17"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NC 17",
+                                "synonyms": [
+                                    "n.c 17",
+                                    "N.C 17"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "G",
+                                "synonyms": [
+                                    "g"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "General",
+                                "synonyms": [
+                                    "G",
+                                    "Genaral"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "A",
+                                "synonyms": [
+                                    "a"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Adult"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PG 13",
+                                "synonyms": [
+                                    "pg 13",
+                                    "P.G 13"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PG - 13",
+                                "synonyms": [
+                                    "p.g - 13",
+                                    "P.G - 13"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PG",
+                                "synonyms": [
+                                    "p.g",
+                                    "P.G"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "aicharacters",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "date"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "animal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "male"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "female"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "adult"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "family"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cild"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "family friendly"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kid friendly"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "child lead"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "animal lead"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "female lead"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "male lead"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "aigenre",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "scary"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "non animated",
+                                "synonyms": [
+                                    "non-animated"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "non cartoon",
+                                "synonyms": [
+                                    "non-cartoon"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "romantic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tragedy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "comedy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cartoon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "animated"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fiction"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fantasy",
+                                "synonyms": [
+                                    "magical"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "drama"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
